@@ -8,21 +8,58 @@
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <link id="linkCss" rel="stylesheet" href="css/style-claro.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+      #mudarTema {
+        margin: 1rem;
+        border-radius: .5rem;
+        border: .25rem solid #f1f1f1;
+        background-color: #2196F3;
+        color: #f1f1f1;
+        font-family: "Roboto", sans-serif
+
+      }
+
+      #barra {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0px;
+        padding-left: 1rem;
+      }
+
+            
+      img {
+        width: 200px;
+        height: 200px;
+        margin-top: 1rem;
+        border-radius: 50%;
+      }
+      
+    
     </style>
     
   </head>
 
   <body class="w3-light-grey" cz-shortcut-listen="true">
-  
+    
+    <div  id="barra" class=" w3-blue">
+      <h1>CV</h1>
+      <button id="mudarTema">Mudar Tema</button>
+    </div>
+    
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div id="container" class="w3-content w3-margin-top" style="max-width:1400px;">
+
+     
   
       <!-- The Grid -->
       <div class="w3-row-padding">
@@ -33,7 +70,8 @@
           <div class="w3-white w3-text-grey w3-card-4">
             <!-- @falvojr: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
-              <h2>NOME_COMPLETO</h2>
+              <img src="img/eu.jpg"/>
+              <h2>Sérgio Abreu Sousa</h2>
             </div>
             <div class="w3-container">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Aspirante à Dev JS Jr</p>
@@ -83,7 +121,7 @@
         </div>
   
         <!-- Right Column -->
-        <div class="w3-twothird">
+        <div class="w3-twothird  w3-card w3-white" >
     
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Sobre</h2>
@@ -120,9 +158,9 @@
                 de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:
               </p>
               <ul>
-                <li><a href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
-                <li><a href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
-                <li><a href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
+                <li><a class="link-certificado" href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
+                <li><a class="link-certificado" href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
+                <li><a class="link-certificado" href="LINK_CERTIFICADO" target="_blank">TODO</a></li>
               </ul>
               <hr>
             </div>
@@ -196,6 +234,8 @@
       <a href="LINK_TWITTER" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
   
   </body>
 
